@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".MenuPrinc">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jeu du pendu"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choissiez le nombre de lettres de votre mot:"
+        android:textStyle="italic"
+        android:layout_below="@id/titre"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/facile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructions"
+        android:text="3 lettres"/>
+
+    <Button
+        android:id="@+id/moyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facile"
+        android:text="5 lettres"/>
+
+    <Button
+        android:id="@+id/dur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moyen"
+        android:text="8 lettres"/>
+
+</RelativeLayout>
